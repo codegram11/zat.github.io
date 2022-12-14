@@ -1,0 +1,597 @@
+@import url(font.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Montserrat-medium;
+}
+
+
+/* --------------------------- */
+/* -------[ STARS MENU]------- */
+/* --------------------------- */
+
+nav{
+    position: fixed;
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logoMenu{
+    height: 40px;
+
+}
+nav ul{
+    display: inline-block;
+    margin-left: 20%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #222222;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+
+.contactbtn{
+    padding: 13px 40px;
+    background: rgb(247,178,16);
+    background: linear-gradient(83deg, rgba(247,178,16,1) 50%, rgba(218,126,10,1) 100%);
+    color: #fff;
+    border-radius: 50px;
+    float: right;
+    margin: 18px 40px;
+}
+
+.contactbtn img{
+    
+    color: #fff;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #222222;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+   display: none; 
+}
+
+
+/* ---------------------------  */
+/* ----[ STARS SCROLL MENU ]---- */
+/* ---------------------------  */
+
+.submenu{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+}
+
+.submenu ul{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.submenu ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+.submenu ul li a{
+    color: #19243F;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.indicador{
+ display: inline-block;
+vertical-align: middle;
+
+}
+
+
+
+.indicador i{
+    color: #19243F;
+    font-size: 25px;
+    margin-left: 25px;
+    transition: .3s;
+
+}
+
+.container-progressbar{
+    width: 100%;
+    height: 60px;
+    background: #DADADA;
+    position: fixed;
+    top: 80px;
+    z-index: 1;
+}
+
+.progressbar{
+    width: 0%;
+    background: #19243F;
+    height: 100%;
+    transition: .3s;
+    opacity: .3;
+}
+
+
+/* ---------------------------  */
+/* ----[ STARS TITLE HEADER ]-- */
+/* ---------------------------  */
+
+.image-hero{
+    background: url(../img/banner\ 1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.section-img{
+    display: flex;
+    justify-content: center;
+}
+
+.title-header{
+    position: absolute;
+    font-size: 80px;
+    font-family: Montserrat-bold;
+    color: #fff;
+   margin-top: 18%;
+   width: 100%;
+   text-align: center;
+}
+
+.headerbtn{
+    margin-top: 37%;
+    position: absolute;
+    border: 1px solid #fff;
+    width: 25%;
+    padding: 15px 20px;
+    border-radius: 50px;
+   text-align: center;
+   color: #fff;
+   display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerbtn img{
+    width: 50px;
+}
+
+
+.headerbtn:hover{
+    background: #fff;
+    color: #222222;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, rgba(0,173,243,1),rgba(158,95,255,1)) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    background-image: url(../img/Botón\ Azul\ .svg);
+    background-position-x:20px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.caja{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* ----------------------------  */
+/* -[ ESTILOS TRABAJAR JUNTOS ]- */
+/* ----------------------------  */
+.container-trab-junt{
+    width: 100%;
+    height: 100vh;   
+}
+.cards{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat-regular;
+    margin: 30px auto;
+}       
+.card{
+    width: 40%; /* Ancho de la tarjeta */
+    margin: 80px;
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2 ) ;
+    cursor: default;
+    transition: all 400ms ease;
+    position: relative;
+    text-align: center;
+    background: url(../img/Articulo1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh; /* alto de la tarjeta */
+        
+}        
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) ;
+    transform: translateY(-1%);
+}
+    
+.contenido-card {
+    width: 80%;
+    height: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+        
+.title-card{
+    font-size: 38px;
+    font-family: Montserrat-bold;
+    position: absolute;
+    padding: 20px;
+}
+        
+.link-card{
+    position: absolute;
+    top: 45%;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 2px solid #19243f;
+    color: #19243f;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width:80%;
+    
+}
+         
+.link-card:hover{
+    transition: all 400ms ease;
+    color: #fff;
+    border: 1px solid #19243f;
+    background: #19243f;
+}
+/* ----------------------------  */
+/* ----------------------------  */
+
+
+/* ----------------------------  */
+/* -[ ESTILOS BANNER ]- */
+/* ----------------------------  */
+
+.banner{
+    background-image: url(../img/botón\ 4.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50px;
+    width: 90%;
+    height: 30vh;
+    margin: 90px auto;
+    position: relative;
+}
+.banner .contenedor-blog{
+    width: 85%;
+    margin: 0 auto;
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner .contenedor-blog h4{
+    font-size: 28px;
+    color: #19243f;
+    width: 60%;
+    float: left;
+}
+.resaltar{
+    font-family: Montserrat-extrabold;
+}
+.banner .contenedor-blog a{
+    width: 20%;
+    text-decoration: none;
+    float: right;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid #19243f;
+    color: #19243f;
+    border-radius: 50px;
+    text-align: center;
+       
+}
+    
+.contenedor-blog  a:hover{
+    color: #fff;
+    background: rgb(158,95,255);
+    background: linear-gradient(164deg, rgba(158,95,255,1) 0%, rgba(0,173,243,1) 100%);
+    transition: all 400ms ease;
+       
+}
+ /* ----------------------------  */
+/* ----------------------------  */   
+    
+
+/* ---------------------------  */
+/* ----[ STARS FOOTER]--------- */
+/* ---------------------------  */
+footer{
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    clear: both;
+}
+
+footer div{
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+}
+
+footer div img{
+    width: 100px;
+}
+
+.img-footer{
+    text-align: center;
+}
+
+.container-footer{
+    margin: 0px auto;
+    padding: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+footer div a{
+    text-decoration: none;
+    color: #222222; 
+    font-size: 18px;
+    width: 30%;
+    display: inline-block;
+}
+
+footer div p{
+    font-size: 18px;
+    float: right;
+}
+
+hr{
+   margin: 0 auto;
+    width: 100%;  
+}
+/* ----------------------------  */
+/* ----------------------------  */
+
+
+
+@media (max-width: 1100px) {
+    /*======[MEDIA ESTILOS TRABAJAR JUNTOS]======*/
+    .title-card{
+        font-size: 25px;
+    }
+
+    .link-card{
+        font-size: 16px;
+        width:90%;
+    }
+
+    .link-card img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .card{
+        width: 50%; /* Ancho de la tarjeta */
+        margin: 40px;
+        height: 80vh; /* alto de la tarjeta */
+        
+    }
+
+    
+    /*======[MEDIA ESTILOS BANNER]======*/
+    .banner .contenedor-blog h4{
+        font-size: 22px;
+        width: 60%;
+        float: left;
+    }
+    .banner .contenedor-blog a{
+        width: 30%;
+        padding: 15px 30px;
+        font-size: 16px;  
+    }
+}
+
+
+/* TABLET */
+@media (max-width: 952px) {
+    .contactbtn{
+        font-size: 16;
+        padding: 10px 30px;
+        margin: 22px 20px;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+    /*======[MEDIA ESTILOS FOOTER]======*/
+    footer div a{
+        text-decoration: none;
+        color: #222222; 
+        font-size: 16px;
+        width: 30%;
+        display: inline-block;
+    }
+    
+    footer div p{
+        font-size: 16px;
+        float: right;
+    }
+
+    /*======[MEDIA ESTILOS TRABAJAR JUNTOS]======*/
+    .title-card{
+        font-size: 25px;
+    }
+
+    .link-card{
+        font-size: 16px;
+        width:90%;
+    }
+
+    .link-card img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .card{
+        width: 50%; /* Ancho de la tarjeta */
+        margin: 40px;
+        height: 80vh; /* alto de la tarjeta */
+        
+    }
+}
+    
+
+/* MOVIL */
+@media (max-width: 858px) {
+
+     /*======[MEDIA ESTILOS MENU]======*/
+    .checkbtn{
+        display: block;
+    }
+    ul, .contactbtn{
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    /*======[MEDIA ESTILOS TRABAJAR JUNTOS]======*/
+    .title-card{
+        font-size: 18px;
+    }
+
+    .link-card{
+        font-size: 14px;
+        width:90%;
+    }
+
+    .link-card img{
+        width: 20px;
+        height: 20px;
+    }
+    .cards{
+        display: block;
+        height: auto;
+        font-family: Montserrat-regular;
+        margin: 0 auto;
+
+    }
+
+    .card{
+        width: 50%; /* Ancho de la tarjeta */
+        margin: 40px;
+        height: 60vh; /* alto de la tarjeta */
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    /*======[MEDIA ESTILOS BANNER]======*/
+    .banner .contenedor-blog h4{
+        font-size: 18px;
+        width: 60%;
+        float: left;
+    }
+    .banner .contenedor-blog a{
+        width: 30%;
+        padding: 15px 30px;
+        font-size: 14px;  
+    }
+
+    .banner{
+        margin: 200px auto;
+    }
+    .banner .contenedor-blog{
+        width: 85%;
+        margin: 0 auto;
+        height: 27vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*======[MEDIA ESTILOS FOOTER]======*/
+    .container-footer a{
+        display: inline-block;
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .container-footer p{
+        display: inline-block;
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+
+}
