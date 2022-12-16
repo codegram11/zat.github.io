@@ -22,4 +22,3 @@ function scrollProgressBar(){
 
 window.addEventListener('scroll', scrollProgressBar);
 
-
